@@ -5,7 +5,9 @@ description = "A simple and intuitive tool designed to help you concentrate and 
 authors = [
     {name = "Yuliia Shevchenko", email = "ulka.shevchenko@gmail.com"},
 ]
-dependencies = []
+dependencies = [
+    "pyqt6"
+]
 requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "CC0 1.0 Universal"}
