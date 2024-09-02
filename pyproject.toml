@@ -1,0 +1,18 @@
+[project]
+name = "mindnest"
+version = "0.0.1"
+description = "A simple and intuitive tool designed to help you concentrate and boost your productivity"
+authors = [
+    {name = "Yuliia Shevchenko", email = "ulka.shevchenko@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "CC0 1.0 Universal"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
