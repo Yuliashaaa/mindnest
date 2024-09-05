@@ -24,7 +24,7 @@ repos:
     hooks:
       - id: refurb
   - repo: https://github.com/pdm-project/pdm
-    rev: 0dd75eef0a6dba093008ee3c131bb623638c3b56   # frozen: v2.16.1
+    rev: 8ad143c11509ae1a1e0cf8b4e58f2bb9e6bdc30a   # frozen: v2.18.1
     hooks:
       - id: pdm-lock-check
 
