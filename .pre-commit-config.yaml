@@ -1,13 +1,32 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: 2c9f875913ee60ca25ce70243dc24d5b6415598c # frozen v4.6.0
+    rev: 2c9f875913ee60ca25ce70243dc24d5b6415598c   # frozen: v4.6.0
     hooks:
-      - id: trailing-whitespace
+      - id: double-quote-string-fixer
       - id: end-of-file-fixer
-      - id: check-yaml
-
+      - id: mixed-line-ending
+      - id: trailing-whitespace
   - repo: https://github.com/psf/black
-    rev: b965c2a5026f8ba399283ba3e01898b012853c79 # frozen v24.8.0
+    rev: b965c2a5026f8ba399283ba3e01898b012853c79   # frozen: v24.8.0
     hooks:
       - id: black
-        language_version: python3
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: f1ebc5730d98440041cc43e4d69829ad598ae1e7   # frozen: v0.6.3
+    hooks:
+      - id: ruff
+      - id: ruff-format
+  - repo: https://github.com/pycqa/isort
+    rev: c655831799765e9593989ee12faba13b6ca391a5   # frozen: v5.13.2
+    hooks:
+      - id: isort
+  - repo: https://github.com/dosisod/refurb
+    rev: 2e31f0033b6c00bf99912fc6a8b5fd00460c9ba0   # frozen: v2.0.0
+    hooks:
+      - id: refurb
+  - repo: https://github.com/pdm-project/pdm
+    rev: 0dd75eef0a6dba093008ee3c131bb623638c3b56   # frozen: v2.16.1
+    hooks:
+      - id: pdm-lock-check
+
+default_language_version:
+  python: python3.11
